@@ -40,13 +40,13 @@ switch (randomNumber) {
 console.log(`The computer chooses ${computerTurn}`);
 
 if ((playerTurn === rock && computerTurn === scissors) || (playerTurn === paper && computerTurn === rock) || (playerTurn === scissors && computerTurn === paper)) {
-    console.log("You win!");
+    console.log('\x1b[33m You win! \x1b[0m');
 }
 else if ((playerTurn === rock && computerTurn === paper) || (playerTurn === paper && computerTurn === scissors) || (playerTurn === scissors && computerTurn === rock)) {
-    console.log("You lose!");
+    console.log('\x1b[33m You lose! \x1b[0m'); 
 }
 else if ((playerTurn === rock && computerTurn === rock) || (playerTurn === paper && computerTurn === paper) || (playerTurn === scissors && computerTurn === scissors)) {
-    console.log("Draw!");
+    console.log('\x1b[33m Draw! \x1b[0m');  
 }
 }
 RockPaperScissors("paper"); 
